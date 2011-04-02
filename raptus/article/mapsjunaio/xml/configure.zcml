@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="raptus.article">
+    
+    <browser:page
+        for="raptus.article.maps.interfaces.IMap"
+        name="view"
+        class=".junaio.View"
+        permission="zope.Public"
+        layer="..interfaces.IJunaioBrowserLayer"
+        />
+
+</configure>

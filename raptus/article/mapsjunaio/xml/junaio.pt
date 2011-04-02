@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results>
+	<poi id="33" interactionfeedback="dd">
+		<name><![CDATA[Hello World POI]]></name>
+		<description><![CDATA[[This is my first POI.]]></description>
+		<l>48.1385,11.5750,0</l> <o>0,0,0</o>
+		<mime-type>text/plain</mime-type>
+		<thumbnail>http://yourURL.com/img/thumbnail.jpg</thumbnail>
+		<icon>http://yourURL.com/img/icon.jpg</icon>
+	</poi>
+</results>

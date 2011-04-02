@@ -1,0 +1,6 @@
+<layers>
+  
+  <layer name="raptus.theme.lineage" 
+         interface="raptus.article.mapsjunaio.interfaces.IJunaioBrowserLayer" />
+         
+</layers>

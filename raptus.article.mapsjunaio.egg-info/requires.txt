@@ -1,3 +1,0 @@
-setuptools
-raptus.article.maps
-raptus.article.core

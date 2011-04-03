@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<object name="portal_properties" meta_type="Plone Properties Tool">
+ <object name="raptus_article" meta_type="Plone Property Sheet" purge="False">
+  <property name="junaio_thumbnail_width" type="int" purge="False">150</property>
+  <property name="junaio_thumbnail_height" type="int" purge="False">150</property>
+  <property name="junaio_thumbnail_default" type="string" purge="False">mapsjunaio_thumbnail.png</property>
+  <property name="junaio_icon_width" type="int" purge="False">40</property>
+  <property name="junaio_icon_height" type="int" purge="False">40</property>
+  <property name="junaio_icon_default" type="string" purge="False">mapsjunaio_icon.png</property>
+ </object>
+</object>

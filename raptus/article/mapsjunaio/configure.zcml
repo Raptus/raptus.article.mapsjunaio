@@ -20,9 +20,19 @@
       description=""
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-             
+
+    <!-- File System Directory Views registration -->
+    <cmf:registerDirectory
+      name="raptus_article_mapsjunaio"
+      recursive="True"
+      />
+
     <adapter
       factory=".extender.MapsExtender"
+      name="raptus.article.mapsjunaio" />
+
+    <adapter
+      factory=".extender.MarkerExtender"
       name="raptus.article.mapsjunaio" />
 
 </configure>

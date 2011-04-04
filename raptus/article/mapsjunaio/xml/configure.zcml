@@ -5,7 +5,7 @@
     
     <browser:page
         for="raptus.article.maps.interfaces.IMap"
-        name="poi"
+        name="pois"
         class=".junaio.View"
         permission="zope.Public"
         layer="..interfaces.IJunaioBrowserLayer"

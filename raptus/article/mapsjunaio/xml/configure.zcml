@@ -5,10 +5,11 @@
     
     <browser:page
         for="raptus.article.maps.interfaces.IMap"
-        name="junaio"
+        name="poi"
         class=".junaio.View"
         permission="zope.Public"
         layer="..interfaces.IJunaioBrowserLayer"
+        allowed_attributes="search"
         />
 
 </configure>

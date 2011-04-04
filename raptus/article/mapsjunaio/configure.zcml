@@ -6,7 +6,7 @@
     i18n_domain="raptus.article">
     
     <five:registerPackage package="." />
-      
+
     <include package="raptus.googlemaps" />
     <include package="raptus.article.core" />
     

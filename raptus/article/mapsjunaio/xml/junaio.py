@@ -1,16 +1,26 @@
 from zope import component
 
 from Acquisition import aq_inner
+from AccessControl import ClassSecurityInfo
 
+from Products.CMFCore.permissions import View
+from Products.CMFCore.utils import getToolByName
 from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-from Products.CMFCore.utils import getToolByName
 
 from raptus.article.maps.interfaces import IMarkers
 
+
 class View(BrowserView):
     
-    __call__ = ViewPageTemplateFile('junaio.pt')
+    def __call__(self):
+        return 'junaio ws service'
+
+    def search(self):
+        """ search method for junaio
+        """
+        return ViewPageTemplateFile('junaio.pt')(self)
+    
     
     def __init__(self, context, request):
         super(View,self).__init__(context, request)

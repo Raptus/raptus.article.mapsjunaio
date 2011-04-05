@@ -35,4 +35,7 @@
       factory=".extender.MarkerExtender"
       name="raptus.article.mapsjunaio" />
 
+    <adapter
+      factory=".adapters.HtmlParser" />
+
 </configure>

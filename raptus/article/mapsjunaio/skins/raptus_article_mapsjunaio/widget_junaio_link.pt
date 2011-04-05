@@ -11,7 +11,7 @@
       <metal:use use-macro="field_macro | context/widgets/field/macros/edit">
           <span metal:fill-slot="widget_body"
                 tal:condition="not: context/isTemporary"
-                tal:replace="string:${context/absolute_url}/@@junaio"/>
+                tal:replace="string:${context/absolute_url}"/>
       </metal:use>
     </metal:view_macro>
 

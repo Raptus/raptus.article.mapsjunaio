@@ -9,6 +9,7 @@ from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 from raptus.article.maps.interfaces import IMarkers
+from raptus.article.mapsjunaio.interfaces import IHtmlParser
 
 
 class View(BrowserView):
@@ -36,7 +37,7 @@ class View(BrowserView):
                       obj = object,
                       uid = brain.UID,
                       title = object.Title(),
-                      text = object.getText(),
+                      text = IHtmlParser(object).getText(),
                       latitude = object.getLatitude(),
                       longitude = object.getLongitude(),
                       icon = self._thumbnail(object, scales),

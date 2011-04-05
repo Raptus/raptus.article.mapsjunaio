@@ -24,14 +24,15 @@ class HtmlParser(object):
         
     def getText(self):
         text = self.context.getText()
-        regs = list()
         for el in self.BLOCK_ELEMENT:
             reg = re.compile('<[\s]*[\/]?[\s]*%s[\s]*[\/]?[\s]*>' % el)
-            regs.append(reg)
+            reg.sub('\n', text)
+        regs = list()
         regs.append(re.compile('<[a-zA-Z\/][^>]*>'))
         regs.append(re.compile(r'^(.+)(?:\n|\r\n?)((?:(?:\n|\r\n?).+)+)', re.MULTILINE))
-        regs.append(re.compile(r'^[\s]*', re.MULTILINE))
         for reg in regs:
             text = reg.sub(' ', text)
+        reg = re.compile(r'^[\s]*', re.MULTILINE)
+        text = reg.sub('', text)
         text = text.strip()
         return text

@@ -6,7 +6,7 @@ version = '1.0b1'
 setup(name='raptus.article.mapsjunaio',
       version=version,
       description="this product provide a xml view for junaio",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "MANUAL.txt")).read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
